@@ -3,12 +3,15 @@ import carbon.compose.Configuration
 plugins {
     id("carbon.android.library")
     id("carbon.detekt")
+    alias(libs.plugins.compose.screenshot)
 }
 
 apply(from = "${rootDir}/scripts/publishing.gradle.kts")
 
 android {
     namespace = "carbon.compose"
+
+    experimentalProperties["android.experimental.enableScreenshotTest"] = true
 }
 
 mavenPublishing {

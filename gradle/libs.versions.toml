@@ -17,6 +17,7 @@ androidxNavigation = "2.7.7"
 androidxTestCore = "1.6.1"
 androidxTestExtJunit = "1.1.5"
 publish-plugin = "0.28.0"
+composeScreenshot = "0.0.1-alpha02"
 detekt = "1.23.3"
 dokka = "1.8.20"
 junit = "4.13.2"
@@ -51,6 +52,7 @@ detekt-gradlePlugin = { group = "io.gitlab.arturbosch.detekt", name = "io.gitlab
 [plugins]
 android-application = { id = "com.android.application", version.ref = "androidGradlePlugin" }
 android-library = { id = "com.android.library", version.ref = "androidGradlePlugin" }
+compose-screenshot = { id = "com.android.compose.screenshot", version.ref = "composeScreenshot" }
 binaryCompatibilityValidator = { id = "org.jetbrains.kotlinx.binary-compatibility-validator", version.ref = "binaryCompatibilityValidator" }
 detekt = { id = "io.gitlab.arturbosch.detekt", version.ref = "detekt" }
 dokka = { id = "org.jetbrains.dokka", version.ref = "dokka" }
