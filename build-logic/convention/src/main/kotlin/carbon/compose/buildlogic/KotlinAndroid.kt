@@ -5,7 +5,7 @@ import com.android.build.api.dsl.CommonExtension
 /**
  * Configure Android extension with common settings.
  */
-internal fun CommonExtension<*, *, *, *, *>.configureKotlinAndroidCommon() {
+internal fun CommonExtension<*, *, *, *, *, *>.configureKotlinAndroidCommon() {
 
     defaultConfig {
         minSdk = Constants.Versions.MIN_SDK

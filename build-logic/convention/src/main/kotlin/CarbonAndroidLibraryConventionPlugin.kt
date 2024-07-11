@@ -38,9 +38,11 @@ class CarbonAndroidLibraryConventionPlugin : Plugin<Project> {
         kotlinOptions {
             freeCompilerArgs += listOf(
                 "-P",
-                Constants.CompileArgs.COMPOSE_METRICS_PRE + "${buildDir}/compose/metrics",
+                Constants.CompileArgs.COMPOSE_METRICS_PRE +
+                    "\"${layout.buildDirectory.get()}/compose/metrics\"",
                 "-P",
-                Constants.CompileArgs.COMPOSE_REPORT_PRE + "${buildDir}/compose/reports",
+                Constants.CompileArgs.COMPOSE_REPORT_PRE +
+                    "\"${layout.buildDirectory.get()}/compose/reports\"",
             )
 
             file("compose_compiler_config.conf").takeIf { it.exists() }?.let {

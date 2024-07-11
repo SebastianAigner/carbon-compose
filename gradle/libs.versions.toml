@@ -1,6 +1,6 @@
 [versions]
 # region Build + build-logic
-androidGradlePlugin = "8.2.2"
+androidGradlePlugin = "8.5.0"
 kotlin = "1.9.23"
 binaryCompatibilityValidator = "0.13.1"
 # endregion
